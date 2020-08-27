@@ -34,7 +34,6 @@ public class User {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((logDate == null) ? 0 : logDate.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
@@ -48,11 +47,6 @@ public class User {
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
-		if (logDate == null) {
-			if (other.logDate != null)
-				return false;
-		} else if (!logDate.equals(other.logDate))
-			return false;
 		if (name == null) {
 			if (other.name != null)
 				return false;
@@ -60,6 +54,7 @@ public class User {
 			return false;
 		return true;
 	}
+
 	
 	
 	
